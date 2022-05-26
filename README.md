@@ -1,16 +1,16 @@
-# asroo_shop
+# Asroo Shop
+![asroshoop](https://user-images.githubusercontent.com/32362203/170389621-2c6f3d65-d850-4a4d-8686-5cb910fd5e95.jpg)
 
-A new Flutter project.
+# Skills 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Bloc-for state managment.
+- Api.
+- Dio.
+- Localization.
+- Dark mode.
+- Firebase Authentication.
+- Firebase Storage.
+- Firebase Functions.
+- Shared Preferences.
+- Beautiful UI.
+- Beautiful Animation.
