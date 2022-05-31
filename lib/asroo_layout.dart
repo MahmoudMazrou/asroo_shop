@@ -28,22 +28,15 @@ class Asroolayout extends StatelessWidget
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              cubit.titles[cubit.currentIndex],//اعطيتو من لستة عشان يتغير كل منغير بلبوتم شيت
+              cubit.titles[cubit.currentIndex], //اعطيتو من لستة عشان يتغير كل منغير بلبوتم شي
+              style: const TextStyle(
+                fontFamily: 'Circe',
+                fontSize: 20,
+                color: Color(0xfff5f5f5),
+              ),
             ),
-            actions: [
-              IconButton(
-                icon: Icon(
-                  IconBroken.Notification,
-                ),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(
-                  IconBroken.Search,
-                ),
-                onPressed: () {},
-              ),
-            ],
+            centerTitle: true,
+
           ),
 
 
@@ -67,10 +60,10 @@ class Asroolayout extends StatelessWidget
                 {
                   cubit.changeIndex(index);// بستدعيها عند الضغط من الكيوبت وطبعا ستيت منجمنت بلوك
                 },
-                items: const [
+                items:  const [
                   BottomNavigationBarItem(
                     icon: Icon(
-                      IconBroken.Setting,
+                      IconBroken.Home,
                     ),
                     label: 'HomeScreen',
                   ),

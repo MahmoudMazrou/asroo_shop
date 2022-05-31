@@ -52,7 +52,7 @@ ThemeData lightTheme = ThemeData(
       statusBarColor: Colors.white,
       statusBarIconBrightness: Brightness.dark,
     ),
-    backgroundColor: Colors.white,
+    backgroundColor: mainColor,
     elevation: 0.0,
     titleTextStyle: TextStyle(
       color: Colors.black,

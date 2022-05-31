@@ -19,7 +19,7 @@ class AppCubit extends Cubit<AppStates> {
   ];
 
   List<String> titles = [
-    "HomeScreen",
+    "Asroo Shop",
     'setting',
   ];
 

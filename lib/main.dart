@@ -29,8 +29,8 @@ void main() async {
   DioHelper.init();
   await CacheHelper.init();
 
-  bool? isDark = CacheHelper.getData(key:'isDark');
-  print(isDark!);
+  bool? isDark = CacheHelper.getData(key:'isDark')??false;
+
   Widget widget;
 
   bool? onBoarding = CacheHelper.getData(key: 'onBoarding');//هاي قيمة تعت البيج فيو الان بوردينق  عشان اذا مخزن قيمة تروحش الها مرة ثانية
