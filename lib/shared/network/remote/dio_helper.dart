@@ -8,7 +8,7 @@ class DioHelper {
   {
     dio = Dio(
       BaseOptions(
-        baseUrl: 'https://student.valuxapps.com/api/',
+        baseUrl: 'https://fakestoreapi.com/',
         receiveDataWhenStatusError: true,
       ),
     );
@@ -16,21 +16,21 @@ class DioHelper {
 
   static Future<Response> getData({
     required String url,
-    Map<String, dynamic>? query,
+ Map<String, dynamic>? query,
     String lang = 'en',
-    String? token,
+   String? token,
   }) async
   {
     dio.options.headers =
     {
-      'lang':lang,//بحطو هيك عشان ممكن اغيرو
-      'Authorization': token??'',
+     'lang':lang,//بحطو هيك عشان ممكن اغيرو
+     'Authorization': token??'',
       'Content-Type': 'application/json',
     };
 
     return await dio.get(
       url,
-      queryParameters: query,
+   //  queryParameters: query!?,
     );
   }
 

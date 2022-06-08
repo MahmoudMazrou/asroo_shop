@@ -1,57 +1,51 @@
-class Prodects {
-  final int? id;
-  final String? title;
-  final double? price;
-  final String? description;
-  final String? category;
-  final String? image;
-  final Rating? rating;
 
-  Prodects({
-    this.id,
-    this.title,
-    this.price,
-    this.description,
-    this.category,
-    this.image,
-    this.rating,
-  });
+class ProdectModel {
+  late  int id;
+  late String title;
+  late double price;
+  late String description;
+  late String category;
+  late String image;
+  late double rate;
+  late int count;
 
-  Prodects.fromJson(Map<String, dynamic> json)
-      : id = json['id'] as int?,
-        title = json['title'] as String?,
-        price = json['price'] as double?,
-        description = json['description'] as String?,
-        category = json['category'] as String?,
-        image = json['image'] as String?,
-        rating = (json['rating'] as Map<String,dynamic>?) != null ? Rating.fromJson(json['rating'] as Map<String,dynamic>) : null;
+  ProdectModel(
+      {
+        required this.id,
+        required  this.title,
+        required  this.price,
+        required  this.description,
+        required  this.category,
+        required this.image,
+        required this.rate,
+        required this.count,
+      });
 
-  Map<String, dynamic> toJson() => {
-    'id' : id,
-    'title' : title,
-    'price' : price,
-    'description' : description,
-    'category' : category,
-    'image' : image,
-    'rating' : rating?.toJson()
-  };
+
+  ProdectModel.fromJson(Map<String, dynamic> json)
+  {
+    id = json['id;'];
+    title = json['title'];
+    price = json['price'];
+    description = json['description'];
+    category = json['category'];
+    image = json['image'];
+    rate = json['rate'];
+    count = json['count'];
+  }
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'price': price,
+      'description': description,
+      'category': category,
+      'image': image,
+      'rate': rate,
+      'count': count,
+    };
+  }
+
 }
 
-class Rating {
-  final double? rate;
-  final int? count;
 
-  Rating({
-    this.rate,
-    this.count,
-  });
-
-  Rating.fromJson(Map<String, dynamic> json)
-      : rate = json['rate'] as double?,
-        count = json['count'] as int?;
-
-  Map<String, dynamic> toJson() => {
-    'rate' : rate,
-    'count' : count
-  };
-}

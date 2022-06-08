@@ -26,7 +26,9 @@ class Asroolayout extends StatelessWidget
 
 
         return Scaffold(
-          appBar: AppBar(
+          backgroundColor: Colors.grey[200],
+
+             appBar: AppBar(
             title: Text(
               cubit.titles[cubit.currentIndex], //اعطيتو من لستة عشان يتغير كل منغير بلبوتم شي
               style: const TextStyle(
@@ -65,7 +67,13 @@ class Asroolayout extends StatelessWidget
                     icon: Icon(
                       IconBroken.Home,
                     ),
-                    label: 'HomeScreen',
+                    label: 'Home',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(
+                      Icons.favorite_border,
+                    ),
+                    label: 'Favourite',
                   ),
                   BottomNavigationBarItem(
                     icon: Icon(
